@@ -5,7 +5,7 @@ function Footer() {
     <div>
       <Box textAlign={"center"} w="100%" h={{base:"auto" ,sm:"auto",md:"70px"}} backgroundColor={"gray.500"}p="20px">
       
-       <Grid templateColumns={{base:"100%",sm:"100%",md:"30% 30% 30%"}} gap={5}  >
+       <Grid templateColumns={{base:"100%",sm:"100%",md:"30% 33% 30%"}} gap={5}  >
        <GridItem ml={{base:"40%" ,sm:"40%"}} >
        <Flex justifyContent={{base:"auto" ,sm:"auto",md:"left"}}>
             <Link target={"_blank"} href="https://github.com/Karthik2917k">
@@ -31,7 +31,7 @@ function Footer() {
           </Flex>
        </GridItem>
        <GridItem m="auto" >
-       <Text p="20px 0px" color={"#FEFEFE"} as="b">
+       <Text p="20px 0px 20px 30px" color={"#FEFEFE"} as="b">
           Created By <span style={{color:"#1A365D",fontWeight:"bold"}}>Karthik Alakunta</span> | © 2022 All rights reserved
         </Text>
        </GridItem>
