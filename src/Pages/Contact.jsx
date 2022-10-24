@@ -39,7 +39,7 @@ function Contact() {
             }}
           >
             <GridItem
-              m={{ base: "auto 20%", sm: "auto 20%", md: "30% auto auto auto" }}
+              m={{ base: "auto 10%", sm: "auto 10%", md: "30% auto auto auto" }}
             >
               <Flex mt="50px">
                 <Image

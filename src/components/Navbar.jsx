@@ -1,145 +1,170 @@
 import {
   Box,
-  Button,
   Flex,
+  HStack,
   IconButton,
-  Spacer,
+  Button,
   useDisclosure,
-  useColorMode,
   useColorModeValue,
-  Text,
-  Link,
+  useColorMode,
+  VStack,
+  Heading,
+  Text
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-export default function Navbar() {
+import { motion } from "framer-motion";
+
+const Links = [
+  { name: "Home", id: "#home" },
+  { name: "About", id: "#about" },
+  { name: "Skills", id: "#skills" },
+  { name: "Projects", id: "#projects" },
+  { name: "Contact", id: "#contact" }
+];
+
+function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const color = useColorModeValue("blue.400", "white");
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <div >
+    <>
       <Box
-       position="fixed"
-       top="0"
-       zIndex={4}
-        w="100%"
-        h="65px"
-        m="auto"
-        backgroundColor={color==="white"?"gray.900":"gray.200"}
-        boxShadow="rgba(0, 0, 0, 0.2) 0px 18px 50px -10px"
-       
+        backgroundColor={color === "white" ? "gray.900" : "gray.200"}
+        px={{ base: "3", md: "8" }}
+        position="sticky"
+        top="0"
+        zIndex={4}
+        color="white"
       >
-        <Flex justifyContent="space-between" p="0px 20px 0px 20px">
-          <Link href="https://karthik2917k.github.io">
-          <Button
-          
-            letterSpacing={"2px"}
-            alignItems="center"
-            fontWeight={1000}
-            fontSize="30px"
-            border={
-              colorMode === "dark" ? "5px solid white" : "5px solid black"
-            }
-            p="20px 20px"
-            mt="7px"
-          >
-            Karthik
-          </Button></Link>
-          <Spacer />
+        <Flex h={{base:70,sm:70,md:16}} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={
+              isOpen ? (
+                <CloseIcon color={color === "white" ? "white" : "black"} />
+              ) : (
+                <HamburgerIcon color={color === "white" ? "white" : "black"} />
+              )
+            }
             aria-label={"Open Menu"}
             display={{ md: "none" }}
-            mt="10px"
             onClick={isOpen ? onClose : onOpen}
           />
-
-          {isOpen === true ? (
-            <Box
-              display="block"
-              position="absolute"
-              top="60px"
-              right="0"
-              left="0"
-              height="110vh"
-              p="150px 0px"
-              background={"blue.900"}
-              transition="0.5s"
-              textAlign="center"
+          <HStack spacing={8} alignItems={"center"}>
+            <motion.div
+              initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1
+              }}
+              transition={{
+                duration: 1.2
+              }}
             >
-              <AnchorLink href="#home" >
-                <Text onClick={isOpen ? onClose : onOpen} p="5px 0px" as="b" fontSize="20px" color={color}>Home</Text>
-                
-              </AnchorLink>
-              <br />
-              <br />
-              <AnchorLink href="#about" >
-                <Text onClick={isOpen ? onClose : onOpen} p="5px 0px" as="b" fontSize="20px" color={color}>About</Text>
-                
-              </AnchorLink>
-              <br />
-              <br />
-              <AnchorLink href="#skills">
-              <Text onClick={isOpen ? onClose : onOpen} p="5px 0px" as="b" fontSize="20px" color={color}>Skills</Text>
-
-                
-              </AnchorLink>
-              <br />
-              <br />
-              <AnchorLink href="#projects" >
-              <Text onClick={isOpen ? onClose : onOpen} p="5px 0px" as="b" fontSize="20px" color={color}>Projects</Text>
-
-                
-              </AnchorLink>
-              <br />
-              <br />
-              <AnchorLink href="#contact" p="5px 0px" as="b" fontSize="20px" color={color}>
-                <Button border="2px solid #90CDF4" fontSize="20px" onClick={isOpen ? onClose : onOpen}>
-                  Contact
-                </Button>
-              </AnchorLink>
-            </Box>
-          ) : (
-            <Box
-              alignItems="center"
-              textAlign="center"
-              display={{ base: "none", sm: "none", md: "flex" }}
+              <Heading letterSpacing={3} fontFamily={"Inspiration"}>
+                <AnchorLink href="#home">
+                  <Button
+                    letterSpacing={"2px"}
+                    alignItems="center"
+                    fontWeight={1000}
+                    fontSize="30px"
+                    border={
+                      color === "white" ? "5px solid White" : "5px solid black"
+                    }
+                    backgroundColor={"transparent"}
+                    color={color === "white" ? "white" : "Black"}
+                    p="20px 20px"
+                  >
+                    Karthik
+                  </Button>
+                </AnchorLink>
+              </Heading>
+            </motion.div>
+          </HStack>
+          <Flex>
+            <HStack
+              as={"nav"}
+              spacing={10}
+              display={{ base: "none", md: "flex" }}
+              fontWeight="500"
+              fontSize="16px"
             >
-              <AnchorLink href="#home" >
-                <Text p="5px 20px" as="b" fontSize="20px" color={color}>Home</Text>
-          
-              </AnchorLink>
-              <AnchorLink href="#about"  >
-                <Text p="5px 20px" as="b" fontSize="20px" color={color}>About</Text>
-                
-              </AnchorLink>
-              <AnchorLink href="#skills" >
-                <Text p="5px 20px" as="b" fontSize="20px" color={color}>Skills</Text>
-                
-              </AnchorLink>
-              <AnchorLink href="#projects" >
-              <Text p="5px 20px" as="b" fontSize="20px" color={color}>Projects</Text>
-
-                
-              </AnchorLink>
-              <AnchorLink  href="#contact">
-                <Button border="2px solid #90CDF4" fontSize="20px">
-                  Contact
-                </Button>
-              </AnchorLink>
-            </Box>
-          )}
-          <IconButton
-            alignItems="center"
-            ml="10px"
-            mt="10px"
-            onClick={toggleColorMode}
-          >
-            {colorMode === "dark" ? <MoonIcon /> : <SunIcon />}
-          </IconButton>
+              {Links.map((link) => (
+                <AnchorLink href={link.id} key={link.name}>
+                  <Text fontSize="20px" as="b" color={color}>
+                    {link.name}
+                  </Text>
+                </AnchorLink>
+              ))}
+            </HStack>
+            <motion.div
+              initial={{
+                x: 500,
+                opacity: 0,
+                scale: 0.5
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1
+              }}
+              transition={{
+                duration: 1.2
+              }}
+            >
+              <Button
+                ml="20%"
+                bg="transparent"
+                _hover={{ bg: "transparent" }}
+                onClick={toggleColorMode}
+              >
+                {colorMode === "light" ? (
+                  <MoonIcon fontSize="20px" color={"black"} />
+                ) : (
+                  <SunIcon fontSize="20px" color={color} />
+                )}
+              </Button>
+            </motion.div>
+          </Flex>
         </Flex>
+        {isOpen ? (
+          <VStack
+            justifyContent={"center"}
+            flexDirection="row"
+            textAlign="center"
+            alignItems="center"
+            h="100vh"
+            display={{ md: "none" }}
+            fontWeight="500"
+            fontSize="16px"
+          >
+            <VStack spacing={14} mt="20">
+              {Links.map((link) => (
+                <AnchorLink href={link.id} key={link.name}>
+                  <Text
+                    onClick={isOpen ? onClose : onOpen}
+                    as="b"
+                    fontSize="20px"
+                    color={color}
+                  >
+                    {link.name}
+                  </Text>
+                </AnchorLink>
+              ))}
+            </VStack>
+          </VStack>
+        ) : null}
       </Box>
-    </div>
+    </>
   );
 }
+
+export default Navbar;
+
+

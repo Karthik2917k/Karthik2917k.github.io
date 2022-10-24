@@ -53,7 +53,7 @@ function Projects() {
                 <Text fontSize={"4xl"} color="black" as="b">{`${fadeImage.caption}.com`}</Text><br/><br/>
                 <Text  fontWeight={500} fontSize="18px" color="gray.500">{fadeImage.description}</Text><br/>
                 <Text as="b" fontSize="20px" color="black">Tech Stacks: <span style={{color:"gray",fontSize:"18px"}}>{fadeImage.languages}</span></Text><br/><br/>
-                <Flex justifyContent={"center"} alignItems={"center"}>
+                <Flex mb="50px" justifyContent={"center"} alignItems={"center"}>
                     <Link target={"_blank"} href={fadeImage.live}><Image pl="10px" src="https://i.ibb.co/vsw8tWb/website.png" alt={""}></Image></Link>
                     <Link target={"_blank"} href={fadeImage.video}><Image pl="10px" src="https://i.ibb.co/3WnfsMF/video.png" alt={""}></Image></Link>
                     <Link target={"_blank"} href={fadeImage.github}><Image pl="10px" src="https://i.ibb.co/ZLskdcS/githube.png" alt={""}></Image></Link>
