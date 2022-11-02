@@ -9,17 +9,17 @@ import {
   Link,
   Box,
 } from "@chakra-ui/react";
+import { FaArrowCircleDown, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 function Home() {
   const color = useColorModeValue("blue.300", "white");
   return (
-    <section id="home" >
+    <Box id="home">
       <Grid
         w={{ base: "80%", sm: "80%", md: "90%" }}
-        h="95vh"
         m="auto"
-        pt="80px"
+        pt="60px"
         alignItems={"center"}
         textAlign={"center"}
         templateColumns={{ base: "auto", md: "60% 40%" }}
@@ -55,7 +55,12 @@ function Home() {
             <br />
             <Text m="auto 0" as="b">
               {" "}
-              <span style={{ color: color, fontWeight: "bold" }}>
+              <span
+                style={{
+                  color: color === "white" ? "white" : "black",
+                  fontWeight: "bold",
+                }}
+              >
                 <Typewriter
                   words={[
                     "< Full Stack Web Developer />",
@@ -84,34 +89,26 @@ function Home() {
               justifyContent={"center"}
             >
               <Link
-                ml="30px"
-                w="40px"
-                h="40px"
-                href="https://www.linkedin.com/in/karthikalakunta/"
+                target={"_blank"}
+                ml="20px"
+                href="https://www.linkedin.com/in/karthikalakunta"
               >
-                <Image
-                  src="https://i.ibb.co/kyyyvt3/linkedin.png"
-                  alt="Linkedin"
-                />
+                <FaLinkedinIn size={"30px"} />
               </Link>
               <Link
-                ml="30px"
-                w="40px"
-                h="40px"
+                target={"_blank"}
+                ml="20px"
                 href="https://github.com/Karthik2917k"
               >
-                <Image src="https://i.ibb.co/f27qSSp/github.png" alt="github" />
+                <FaGithub size={"30px"} />
               </Link>
               <Link
-                ml="30px"
-                w="40px"
-                h="40px"
-                href="https://drive.google.com/drive/folders/1ED1T5Fk-LHM6x7KEdIM2u7_gM-0Vz2_E"
+                // target={"_blank"}
+                ml="20px"
+                href="https://drive.google.com/file/d/1T91PahLaInuTS6za3OwvctY__6ZZ1W9h/view?usp=sharing"
+                download
               >
-                <Image
-                  src="https://i.ibb.co/5Gj414m/download.png"
-                  alt="Resume"
-                />
+                <FaArrowCircleDown size={"30px"} />
               </Link>
             </Box>
           </motion.div>
@@ -133,9 +130,9 @@ function Home() {
             <Image
               w={{ base: "300px", sm: "300px", md: "400px", lg: "500px" }}
               h={{ base: "300px", sm: "300px", md: "400px", lg: "500px" }}
-              borderTopLeftRadius={color === "white" ? "300px" : "20px"}
-              borderBottomRightRadius={color === "white" ? "300px" : "20px"}
-              borderTopRightRadius={color === "white" ? "300px" : "20px"}
+              borderTopLeftRadius={color === "white" ? "50%" : "20px"}
+              borderBottomRightRadius={color === "white" ? "50%" : "20px"}
+              borderTopRightRadius={color === "white" ? "50%" : "20px"}
               borderBottomLeftRadius={color === "white" ? "0px" : "20px"}
               src="https://camo.githubusercontent.com/8ba1e66bcfa048214cf17f235c341742347c9c248831d044aa888acbeec89502/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f313239323637372f73637265656e73686f74732f363133393136372f6d656469612f66636637666430633631396262383737303635333330373932343039313566332e676966"
               alt="Dan Abramov"
@@ -143,28 +140,8 @@ function Home() {
           </motion.div>
         </GridItem>
       </Grid>
-    </section>
+    </Box>
   );
 }
 
 export default Home;
-
-// <div className="homee">
-// <div>
-//   <p className="p1">Looking for a Developer!</p>
-//   <p className="p2">Hello my name is</p>
-//   <p className="name">Karthik <span className="namee">Alakunta</span></p>
-//   <p className="role">And I'm a <span className="rolee">Full Stack Web Developer</span></p>
-// </div>
-// <div>
-//   <img
-//     src="https://i.postimg.cc/tgNnWQYQ/photostudio-1-designify.png"
-//     alt="karthik"
-//   />
-// </div>
-// </div>
-// <div className="icons">
-// <a href="https://github.com/Karthik2917k" target="blank"><img src="https://img.icons8.com/sf-black/344/github.png" alt="github" /></a>
-// <a href="https://www.linkedin.com/in/karthikalakunta/" target="blank"><img src="https://img.icons8.com/ios-filled/344/linkedin.png" alt="Linked in" /></a>
-// <a href="https://drive.google.com/drive/u/0/folders/1ED1T5Fk-LHM6x7KEdIM2u7_gM-0Vz2_E" target="blank"><img src="https://img.icons8.com/sf-black/344/download.png" alt="Resume" /></a>
-// </div>

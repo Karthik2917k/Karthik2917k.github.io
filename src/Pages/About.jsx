@@ -12,14 +12,14 @@ import { motion } from "framer-motion";
 function About() {
   const color = useColorModeValue("blue.300", "white");
   return (
-    <section id="about" >
-      <Box pt="80px" textAlign={"center"} w="80%" m="auto">
+    <Box id="about">
+      <Box pt="50px" textAlign={"center"} w="80%" m="auto">
         <Text fontSize={"6xl"} as="b" color={color}>
           About
         </Text>
 
         <Grid
-          mt={{ base: "0px", sm: "0px", md: "100px" }}
+          mt={{ base: "0px", sm: "0px", md: "20px" }}
           templateColumns={{
             base: "repeat(1,fr)",
             sm: "repeat(1,fr)",
@@ -101,7 +101,7 @@ function About() {
           </GridItem>
         </Grid>
 
-        <Box m="30px 0px 50px 0px">
+        <Box mt="30px 0px 0px 0px">
           <Text
             fontSize={"40px"}
             as="b"
@@ -138,10 +138,8 @@ function About() {
                 }}
               >
                 {" "}
-                <Text lineHeight={"50px"} fontWeight={800}>
-                  FULL STACK WEB DEVELOPMENT (Full Time)
-                </Text>
-                <Text pl={"30px"} fontWeight={500}>
+                <Text fontWeight={800}>FULL STACK DEVELOPMENT (Full Time)</Text>
+                <Text p={"20px 0px 0px 30px"} fontWeight={500}>
                   • @ Masai School, Bangalore
                 </Text>
                 <Text pl={"30px"} fontWeight={500}>
@@ -150,29 +148,29 @@ function About() {
               </motion.div>
             </GridItem>
             <GridItem p="10px" textAlign={"left"}>
-              <motion.div initial={{
-          y: 80,
-          opacity: 0
-        }}
-        transition={{
-          duration: 0.8
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0
-        }}>
-              <Text lineHeight={"50px"} fontWeight={800}>
-                Diploma in Computer Engineering
-              </Text>
-              <Text pl={"30px"} fontWeight={500}>
-                • Govt. Polytechnic Institute | Gadwal
-              </Text>
-              <Text pl={"30px"} fontWeight={500}>
-                • <CalendarIcon /> Jun-2018 to May-2022
-              </Text>
-              <Text pl={"30px"} fontWeight={500}>
-                • <StarIcon color={"orange"} /> Grade 70%
-              </Text>
+              <motion.div
+                initial={{
+                  y: 80,
+                  opacity: 0,
+                }}
+                transition={{
+                  duration: 0.8,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+              >
+                <Text fontWeight={800}>Diploma in Computer Engineering</Text>
+                <Text p={"20px 0px 0px 30px"} fontWeight={500}>
+                  • Govt. Polytechnic Institute | Gadwal
+                </Text>
+                <Text pl={"30px"} fontWeight={500}>
+                  • <CalendarIcon /> Jun-2018 to May-2022
+                </Text>
+                <Text pl={"30px"} fontWeight={500}>
+                  • <StarIcon color={"orange"} /> Grade 70%
+                </Text>
               </motion.div>
             </GridItem>
             <GridItem p="10px" textAlign={"left"}>
@@ -189,10 +187,8 @@ function About() {
                   x: 0,
                 }}
               >
-                <Text lineHeight={"50px"} fontWeight={800}>
-                  HIGHER SECONDRY EDUCATION
-                </Text>
-                <Text pl={"30px"} fontWeight={500}>
+                <Text fontWeight={800}>HIGHER SECONDRY EDUCATION</Text>
+                <Text p={"20px 0px 0px 30px"} fontWeight={500}>
                   • @ Z.P.H.S. Boys High School | Pentlvelly
                 </Text>
                 <Text pl={"30px"} fontWeight={500}>
@@ -206,7 +202,7 @@ function About() {
           </Grid>
         </Box>
       </Box>
-    </section>
+    </Box>
   );
 }
 

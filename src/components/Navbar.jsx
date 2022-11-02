@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <>
       <Box
-        backgroundColor={color === "white" ? "gray.900" : "gray.200"}
+        backgroundColor={color === "white" ? "gray.700" : "gray.50"}
         px={{ base: "3", md: "8" }}
         position="sticky"
         top="0"
@@ -73,6 +73,7 @@ function Navbar() {
                     letterSpacing={"2px"}
                     alignItems="center"
                     fontWeight={1000}
+                    
                     fontSize="30px"
                     border={
                       color === "white" ? "5px solid White" : "5px solid black"
@@ -125,7 +126,7 @@ function Navbar() {
                 onClick={toggleColorMode}
               >
                 {colorMode === "light" ? (
-                  <MoonIcon fontSize="20px" color={"black"} />
+                  <MoonIcon fontSize="20px" color={"gray.600"} />
                 ) : (
                   <SunIcon fontSize="20px" color={color} />
                 )}
