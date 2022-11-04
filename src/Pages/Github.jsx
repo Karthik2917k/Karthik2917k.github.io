@@ -33,6 +33,7 @@ function Github() {
             GITHUB STATS
           </Text>
         </Box>
+        <Box mt="30px">
         <SimpleGrid w="80%" m="auto" columns={1} spacing={5}>
           <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={5}>
             <Box m="auto">
@@ -63,6 +64,7 @@ function Github() {
             </Box>
           </SimpleGrid>
         </SimpleGrid>
+        </Box>
       </Box>
     </div>
   );

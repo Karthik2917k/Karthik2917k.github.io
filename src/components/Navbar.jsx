@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <>
       <Box
-        backgroundColor={color === "white" ? "gray.700" : "gray.50"}
+        backgroundColor={color === "white" ? "gray.700" : "gray.100"}
         px={{ base: "3", md: "8" }}
         position="sticky"
         top="0"

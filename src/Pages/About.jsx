@@ -19,7 +19,7 @@ function About() {
         </Text>
 
         <Grid
-          mt={{ base: "0px", sm: "0px", md: "20px" }}
+          mt={{ base: "0px", sm: "0px", md: "30px" }}
           templateColumns={{
             base: "repeat(1,fr)",
             sm: "repeat(1,fr)",
@@ -45,7 +45,6 @@ function About() {
               <Image
                 w="300px"
                 h="300px"
-                mt={{ md: "100px", lg: "0px" }}
                 src="https://i.ibb.co/L0HzgXP/Profile-removebg-preview.png"
                 backgroundColor={"gray.50"}
                 borderRadius="200px"

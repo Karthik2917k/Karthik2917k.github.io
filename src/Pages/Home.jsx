@@ -72,7 +72,7 @@ function Home() {
                   cursorStyle="_"
                   typeSpeed={70}
                   deleteSpeed={50}
-                  delaySpeed={1000}
+                  delaySpeed={500}
                 />
               </span>
             </Text>

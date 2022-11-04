@@ -60,7 +60,7 @@ function Projects() {
       </Box>
       <Box
         m="auto"
-        margin={{ base: "auto auto", sm: "auto auto", md: "20px 10%" }}
+        margin={{ base: "auto auto", sm: "auto auto", md: "40px 10%" }}
       >
         <div
           className="slide-container"

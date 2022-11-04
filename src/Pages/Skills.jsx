@@ -23,7 +23,7 @@ export default function Skills() {
           gap={30}
         >
           <GridItem>
-            <Box mt="50px">
+            <Box mt="25px">
               <Text as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
                 Front-End Technologies :
               </Text>
@@ -77,7 +77,7 @@ export default function Skills() {
                 </GridItem>
               </Grid>
             </Box>
-            <Box mt="50px">
+            <Box mt="30px">
               <Text as="b" fontSize={{ base: "18px", sm: "18px", md: "30px" }}>
                 Front-End Frameworks & Libraries :
               </Text>
@@ -112,7 +112,7 @@ export default function Skills() {
                 </GridItem>
               </Grid>
             </Box>
-            <Box mt="50px">
+            <Box mt="30px">
               <Text as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
                 Tools
               </Text>
@@ -158,7 +158,7 @@ export default function Skills() {
             </Box>
           </GridItem>
           <GridItem>
-            <Box mt="50px">
+            <Box mt="25px">
               <Text as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
                 Back-End Technology & Framework :
               </Text>
