@@ -44,7 +44,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/RTFhfdj/html.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/html.png?raw=true"
                     alt="html"
                   />
                 </GridItem>
@@ -53,7 +53,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/Bzqs87f/css.png"
+                    src="https://raw.githubusercontent.com/Karthik2917k/Karthik2917k.github.io/master/public/assets/css.png"
                     alt="css"
                   />
                 </GridItem>
@@ -62,7 +62,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/wsWntND/javascript.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/javascript.png?raw=true"
                     alt="JS"
                   />
                 </GridItem>
@@ -71,7 +71,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/56dfS14/typescript.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/typescript.png?raw=true"
                     alt="typescript"
                   />
                 </GridItem>
@@ -97,7 +97,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/wM4JCHp/react.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/react.png?raw=true"
                     alt="React"
                   />
                 </GridItem>
@@ -106,7 +106,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/9rxDznK/redux.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/redux.png?raw=true"
                     alt="Redux"
                   />
                 </GridItem>
@@ -132,7 +132,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/M6xLwLx/visual-studio-code.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/visual-studio-code.png?raw=true"
                     alt="VS"
                   />
                 </GridItem>
@@ -141,7 +141,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/3NpGM9K/git.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/git.png?raw=true"
                     alt="Github"
                   />
                 </GridItem>
@@ -150,7 +150,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/942bLhV/postman.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/postman.png?raw=true"
                     alt="postman"
                   />
                 </GridItem>
@@ -178,7 +178,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/KmSwr87/express.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/express.png?raw=true"
                     alt="express"
                   />
                 </GridItem>
@@ -187,7 +187,7 @@ export default function Skills() {
                     ml="30px"
                     w="80px"
                     h="80px"
-                    src="https://i.ibb.co/X4d9v9J/nodejs.png"
+                    src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/nodejs.png?raw=true"
                     alt="Node js"
                   ></Image>
                 </GridItem>
@@ -203,7 +203,7 @@ export default function Skills() {
                   w="80px"
                   h="80px"
                   textAlign={"center"}
-                  src="https://i.ibb.co/mXz4C42/mongodb.png"
+                  src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/mongodb.png?raw=true"
                   alt="MongoDB"
                 />
               </Box>

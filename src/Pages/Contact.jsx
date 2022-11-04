@@ -32,7 +32,7 @@ function Contact({ colorMode }) {
       </Box>
       <Container
         maxW="full"
-        mt={"10px"}
+        mt={"5px"}
         centerContent
         overflow="hidden"
         position="relative"
