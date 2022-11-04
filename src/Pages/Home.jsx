@@ -15,11 +15,11 @@ import { motion } from "framer-motion";
 function Home() {
   const color = useColorModeValue("blue.300", "white");
   return (
-    <Box id="home" pt="130px">
+    <Box id="home" pt={{sm:"80px",md:"130px"}}>
       <Grid
         w={{ base: "80%", sm: "80%", md: "90%" }}
         m="auto"
-        
+        gap="20px"
         alignItems={"center"}
         textAlign={"center"}
         templateColumns={{ base: "auto", md: "60% 40%" }}
