@@ -15,11 +15,11 @@ import { motion } from "framer-motion";
 function Home() {
   const color = useColorModeValue("blue.300", "white");
   return (
-    <Box id="home">
+    <Box id="home" pt="130px">
       <Grid
         w={{ base: "80%", sm: "80%", md: "90%" }}
         m="auto"
-        pt="60px"
+        
         alignItems={"center"}
         textAlign={"center"}
         templateColumns={{ base: "auto", md: "60% 40%" }}
@@ -103,10 +103,9 @@ function Home() {
                 <FaGithub size={"30px"} />
               </Link>
               <Link
-                // target={"_blank"}
                 ml="20px"
-                href="https://drive.google.com/file/d/1T91PahLaInuTS6za3OwvctY__6ZZ1W9h/view?usp=sharing"
-                download
+                href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
+                download={"Karthik-Alakunta-Resume"}
               >
                 <FaArrowCircleDown size={"30px"} />
               </Link>

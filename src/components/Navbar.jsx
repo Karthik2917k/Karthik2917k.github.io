@@ -9,7 +9,8 @@ import {
   useColorMode,
   VStack,
   Heading,
-  Text
+  Text,
+  Link
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -98,9 +99,9 @@ function Navbar() {
             >
               {Links.map((link) => (
                 <AnchorLink href={link.id} key={link.name}>
-                  <Text fontSize="20px" as="b" color={color}>
+                  <Link><Text fontSize="20px" as="b" color={color}>
                     {link.name}
-                  </Text>
+                  </Text></Link>
                 </AnchorLink>
               ))}
             </HStack>
@@ -146,18 +147,19 @@ function Navbar() {
             fontSize="16px"
           >
             <VStack spacing={14} mt="20">
-              {Links.map((link) => (
+            {Links.map((link) => (
                 <AnchorLink href={link.id} key={link.name}>
-                  <Text
-                    onClick={isOpen ? onClose : onOpen}
-                    as="b"
-                    fontSize="20px"
-                    color={color}
-                  >
+                  <Link><Text fontSize="20px" as="b" color={color}>
                     {link.name}
-                  </Text>
+                  </Text></Link>
                 </AnchorLink>
               ))}
+               <Link
+                href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
+                download={"Karthik-Alakunta-Resume"}
+              >
+                <Text fontSize="20px" as="b" color={color}>Resume</Text>
+              </Link>
             </VStack>
           </VStack>
         ) : null}
