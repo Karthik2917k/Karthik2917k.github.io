@@ -148,8 +148,8 @@ function Navbar() {
           >
             <VStack spacing={14} mt="20">
             {Links.map((link) => (
-                <AnchorLink href={link.id} key={link.name}>
-                  <Link><Text fontSize="20px" as="b" color={color}>
+                <AnchorLink href={link.id} key={link.name} onClick={isOpen ? onClose : onOpen}>
+                  <Link ><Text  fontSize="20px" as="b" color={color}>
                     {link.name}
                   </Text></Link>
                 </AnchorLink>
@@ -158,7 +158,7 @@ function Navbar() {
                 href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
                 download={"Karthik-Alakunta-Resume"}
               >
-                <Text fontSize="20px" as="b" color={color}>Resume</Text>
+                <Text onClick={isOpen ? onClose : onOpen} fontSize="20px" as="b" color={color}>Resume</Text>
               </Link>
             </VStack>
           </VStack>
