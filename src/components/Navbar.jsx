@@ -10,18 +10,16 @@ import {
   VStack,
   Heading,
   Text,
-  Link
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import {Link} from "react-scroll"
 import { motion } from "framer-motion";
 
 const Links = [
-  { name: "Home", id: "#home" },
-  { name: "About", id: "#about" },
-  { name: "Skills", id: "#skills" },
-  { name: "Projects", id: "#projects" },
-  { name: "Contact", id: "#contact" }
+  { name: "About", id: "about" },
+  { name: "Skills", id: "skills" },
+  { name: "Projects", id: "projects" },
+  { name: "Contact", id: "contact" }
 ];
 
 function Navbar() {
@@ -69,7 +67,7 @@ function Navbar() {
               }}
             >
               <Heading letterSpacing={3} fontFamily={"Inspiration"}>
-                <AnchorLink href="#home">
+                <Link to={"home"} spy={true} smooth={true} offset={-70} duration={1000} key={"home"}>
                   <Button
                     letterSpacing={"2px"}
                     alignItems="center"
@@ -85,25 +83,36 @@ function Navbar() {
                   >
                     Karthik
                   </Button>
-                </AnchorLink>
+                  </Link>
               </Heading>
             </motion.div>
           </HStack>
           <Flex>
             <HStack
               as={"nav"}
-              spacing={10}
+              spacing={5}
               display={{ base: "none", md: "flex" }}
               fontWeight="500"
               fontSize="16px"
             >
+              <Link style={{cursor:"pointer"}} to={"home"} spy={true} smooth={true} offset={-70} duration={1000} key={"home"}>
+                  <Text  fontSize="20px" as="b" color={color}>
+                    Home
+                  </Text>
+                  </Link>
               {Links.map((link) => (
-                <AnchorLink href={link.id} key={link.name}>
-                  <Link><Text fontSize="20px" as="b" color={color}>
+                <Link style={{cursor:"pointer"}} to={link.id} spy={true} smooth={true} offset={0} duration={500} key={link.name}>
+                  <Text fontSize="20px" as="b" color={color}>
                     {link.name}
-                  </Text></Link>
-                </AnchorLink>
+                  </Text>
+                </Link>
               ))}
+              <a
+                href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
+                download={"Karthik-Alakunta-Resume"}
+              >
+                <Text onClick={isOpen ? onClose : onOpen} fontSize="20px" as="b" color={color}>Resume</Text>
+              </a>
             </HStack>
             <motion.div
               initial={{
@@ -121,7 +130,6 @@ function Navbar() {
               }}
             >
               <Button
-                ml="20%"
                 bg="transparent"
                 _hover={{ bg: "transparent" }}
                 onClick={toggleColorMode}
@@ -147,19 +155,24 @@ function Navbar() {
             fontSize="16px"
           >
             <VStack spacing={14} mt="20">
+            <Link style={{cursor:"pointer"}} to={"home"} spy={true} smooth={true} offset={-1100} duration={500} key={"home"} onClick={isOpen ? onClose : onOpen}>
+                  <Text  fontSize="20px" as="b" color={color}>
+                    Home
+                  </Text>
+                  </Link>
             {Links.map((link) => (
-                <AnchorLink href={link.id} key={link.name} onClick={isOpen ? onClose : onOpen}>
-                  <Link ><Text  fontSize="20px" as="b" color={color}>
+                  <Link style={{cursor:"pointer"}} to={link.id} spy={true} smooth={true} offset={-1020} duration={500} key={link.name} onClick={isOpen ? onClose : onOpen}>
+                  <Text  fontSize="20px" as="b" color={color}>
                     {link.name}
-                  </Text></Link>
-                </AnchorLink>
+                  </Text>
+                  </Link>
               ))}
-               <Link
+               <a
                 href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
                 download={"Karthik-Alakunta-Resume"}
               >
                 <Text onClick={isOpen ? onClose : onOpen} fontSize="20px" as="b" color={color}>Resume</Text>
-              </Link>
+              </a>
             </VStack>
           </VStack>
         ) : null}

@@ -47,9 +47,9 @@ function Home() {
               <Text
                 fontSize={{ base: "20px", sm: "20px", md: "40px" }}
                 as="b"
-                color="gray.300"
+                color="#2B6CB0"
               >
-                Karthik <span style={{ color: "#2B6CB0" }}>Alakunta</span>
+                Karthik Alakunta
               </Text>
             </i>
             <br />
@@ -76,7 +76,7 @@ function Home() {
                 />
               </span>
             </Text>
-            <Text pt="20px" color={"gray.500"} w="90%" m="auto">
+            <Text pt="20px" color={color==="white"?"white":"gray.700"}  w="90%" m="auto">
               A Mern Stack Developer who loves solving problems and building
               projects. I am equipped with a variety of technologies and tools
               to help me build the best possible product.

@@ -48,6 +48,15 @@ const fadeImages = [
     video:
       "https://drive.google.com/file/d/18ecWNcBSxMqNaDi7LCTYkVLiTjYGC2Va/view?usp=share_link",
   },
+  {
+    url: "https://i.ibb.co/9gM37kd/Screenshot-444.png",
+    caption: "Todo",
+    description:
+      "It's an individual project - Todo is an online aplication where user can able to update edit add todos in the site. Project esecuted in 01 day",
+    languages: "React, TypeScript, CSS3, HTML",
+    github: "https://github.com/Karthik2917k/todo-react-typescript",
+    live: "https://todo-react-typescript-aujx.vercel.app",
+  }
 ];
 function Projects() {
   const color = useColorModeValue("blue.300", "white");
@@ -128,13 +137,15 @@ function Projects() {
                         <Link target={"_blank"} href={fadeImage.live}>
                           <FaLaptopCode size={"40px"} />
                         </Link>
-                        <Link
-                          ml="10px"
-                          target={"_blank"}
-                          href={fadeImage.video}
-                        >
-                          <MdVideoLibrary size={"40px"} />
-                        </Link>
+                       {
+                        fadeImage.video &&  <Link
+                        ml="10px"
+                        target={"_blank"}
+                        href={fadeImage.video}
+                      >
+                        <MdVideoLibrary size={"40px"} />
+                      </Link>
+                       }
                         <Link
                           ml="10px"
                           target={"_blank"}

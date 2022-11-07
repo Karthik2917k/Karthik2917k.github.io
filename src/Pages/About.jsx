@@ -70,7 +70,7 @@ function About() {
               <Text
                 fontSize={"20px"}
                 fontWeight={600}
-                color="gray.400"
+                color="gray.600"
                 mb="40px"
               >
                 A passionate Developer, with strong administrative and
@@ -80,7 +80,7 @@ function About() {
               <Text
                 fontSize={"20px"}
                 fontWeight={600}
-                color="gray.400"
+                color="gray.600"
                 mb="40px"
               >
                 I have been developing Web Apps for over 6 months now. Well
@@ -89,7 +89,7 @@ function About() {
               <Text
                 fontSize={"20px"}
                 fontWeight={600}
-                color="gray.400"
+                color="gray.600"
                 mb="40px"
               >
                 As I grow and flourish as a Developer, one thing which keeps me
