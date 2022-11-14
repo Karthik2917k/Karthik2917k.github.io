@@ -37,7 +37,7 @@ export default function Skills() {
                   lg: "25% 25% 25% 25%",
                 }}
                 alignItems={"center"}
-                gap={{ base: 5, sm: 5, md: 2 }}
+                gap={{ base: 5, sm: 5, md: 1 }}
               >
                 <GridItem>
                   <Image
@@ -78,7 +78,7 @@ export default function Skills() {
               </Grid>
             </Box>
             <Box mt="30px">
-              <Text as="b" fontSize={{ base: "18px", sm: "18px", md: "30px" }}>
+              <Text  as="b" fontSize={{ base: "18px", sm: "18px", md: "30px" }}>
                 Front-End Frameworks & Libraries :
               </Text>
               <Grid
@@ -90,7 +90,7 @@ export default function Skills() {
                   md: "25% 25% 25% 25%",
                 }}
                 alignItems={"center"}
-                gap={{ base: 5, sm: 5, md: 2 }}
+                gap={{ base: 5, sm: 5, md: 1 }}
               >
                 <GridItem>
                   <Image
@@ -125,7 +125,7 @@ export default function Skills() {
                   md: "25% 25% 25%",
                 }}
                 alignItems={"center"}
-                gap={{ base: 5, sm: 5, md: 2 }}
+                gap={{ base: 5, sm: 5, md: 1 }}
               >
                 <GridItem>
                   <Image
@@ -171,7 +171,7 @@ export default function Skills() {
                   md: "25% 25% 25% 25%",
                 }}
                 alignItems={"center"}
-                gap={{ base: 5, sm: 5, md: 2 }}
+                gap={{ base: 5, sm: 5, md: 1 }}
               >
                 <GridItem>
                   <Image
@@ -209,7 +209,7 @@ export default function Skills() {
               </Box>
             </Box>
             <Box mt="50px">
-              <Text as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
+              <Text alignItems={"center"} as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
                 Other Skills
               </Text>
               <Box mt="25px">
