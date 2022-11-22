@@ -45,7 +45,7 @@ function About() {
               <Image
                 w="300px"
                 h="300px"
-                src="https://i.ibb.co/L0HzgXP/Profile-removebg-preview.png"
+                src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/Profile-removebg-preview.png?raw=true"
                 backgroundColor={"gray.50"}
                 borderRadius="200px"
                 border="15px solid lightblue"
@@ -70,7 +70,7 @@ function About() {
               <Text
                 fontSize={"20px"}
                 fontWeight={600}
-                color="gray.600"
+                color={color === "white" ? "white" : "black"}
                 mb="40px"
               >
                 A passionate Developer, with strong administrative and
@@ -80,7 +80,7 @@ function About() {
               <Text
                 fontSize={"20px"}
                 fontWeight={600}
-                color="gray.600"
+                color={color === "white" ? "white" : "black"}
                 mb="40px"
               >
                 I have been developing Web Apps for over 6 months now. Well
@@ -89,7 +89,7 @@ function About() {
               <Text
                 fontSize={"20px"}
                 fontWeight={600}
-                color="gray.600"
+                color={color === "white" ? "white" : "black"}
                 mb="40px"
               >
                 As I grow and flourish as a Developer, one thing which keeps me

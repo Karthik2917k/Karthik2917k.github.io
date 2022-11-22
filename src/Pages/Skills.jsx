@@ -33,8 +33,7 @@ export default function Skills() {
                 templateColumns={{
                   base: "50% 50%",
                   sm: "50% 50%",
-                  md: "20% 20% 20% 20%",
-                  lg: "25% 25% 25% 25%",
+                  md: "repeat(4,1fr)",
                 }}
                 alignItems={"center"}
                 gap={{ base: 5, sm: 5, md: 1 }}
@@ -42,8 +41,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/html.png?raw=true"
                     alt="html"
                   />
@@ -51,8 +50,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://raw.githubusercontent.com/Karthik2917k/Karthik2917k.github.io/master/public/assets/css.png"
                     alt="css"
                   />
@@ -60,8 +59,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/javascript.png?raw=true"
                     alt="JS"
                   />
@@ -69,8 +68,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/typescript.png?raw=true"
                     alt="typescript"
                   />
@@ -95,8 +94,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/react.png?raw=true"
                     alt="React"
                   />
@@ -104,8 +103,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/redux.png?raw=true"
                     alt="Redux"
                   />
@@ -130,8 +129,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/visual-studio-code.png?raw=true"
                     alt="VS"
                   />
@@ -139,8 +138,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/git.png?raw=true"
                     alt="Github"
                   />
@@ -148,8 +147,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/postman.png?raw=true"
                     alt="postman"
                   />
@@ -176,8 +175,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/express.png?raw=true"
                     alt="express"
                   />
@@ -185,8 +184,8 @@ export default function Skills() {
                 <GridItem>
                   <Image
                     ml="30px"
-                    w="80px"
-                    h="80px"
+                    w="70px"
+                    h="70px"
                     src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/nodejs.png?raw=true"
                     alt="Node js"
                   ></Image>
@@ -200,8 +199,8 @@ export default function Skills() {
               <Box mt="25px">
                 <Image
                   ml="30px"
-                  w="80px"
-                  h="80px"
+                  w="70px"
+                  h="70px"
                   textAlign={"center"}
                   src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/mongodb.png?raw=true"
                   alt="MongoDB"
@@ -215,8 +214,8 @@ export default function Skills() {
               <Box mt="25px">
                 <Image
                   ml="30px"
-                  w="80px"
-                  h="80px"
+                  w="70px"
+                  h="70px"
                   textAlign={"center"}
                   src="https://www.pngkit.com/png/full/234-2349639_data-structure-algorithms-weak-avl-tree.png"
                   alt="Data structures"

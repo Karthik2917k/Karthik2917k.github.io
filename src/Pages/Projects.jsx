@@ -50,7 +50,7 @@ const fadeImages = [
   },
   {
     url: "https://www.sociableblog.com/wp-content/uploads/2014/12/bufferapp1.jpg",
-    caption: "BlueLock",
+    caption: "Buffer.com",
     description:"It's group project -Buffer is a social media management application or tool. It helps you to manage multiple social media networks from one place. It is one of the best time saving methods in the world of social media marketing.",
     languages: "React, Chakra-ui, redux, express, Node js, MongoDB",
     github: "https://github.com/karishma24-max/aberrant-coast-299",

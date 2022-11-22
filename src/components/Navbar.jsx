@@ -10,16 +10,17 @@ import {
   VStack,
   Heading,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 const Links = [
   { name: "About", id: "about" },
   { name: "Skills", id: "skills" },
   { name: "Projects", id: "projects" },
-  { name: "Contact", id: "contact" }
+  { name: "Contact", id: "contact" },
 ];
 
 function Navbar() {
@@ -36,7 +37,11 @@ function Navbar() {
         zIndex={4}
         color="white"
       >
-        <Flex h={{base:70,sm:70,md:16}} alignItems={"center"} justifyContent={"space-between"}>
+        <Flex
+          h={{ base: 70, sm: 70, md: 16 }}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
           <IconButton
             size={"md"}
             icon={
@@ -55,35 +60,44 @@ function Navbar() {
               initial={{
                 x: -500,
                 opacity: 0,
-                scale: 0.5
+                scale: 0.5,
               }}
               animate={{
                 x: 0,
                 opacity: 1,
-                scale: 1
+                scale: 1,
               }}
               transition={{
-                duration: 1.2
+                duration: 1.2,
               }}
             >
               <Heading letterSpacing={3} fontFamily={"Inspiration"}>
-                <Link to={"home"} spy={true} smooth={true} offset={-70} duration={1000} key={"home"}>
-                  <Button
-                    letterSpacing={"2px"}
-                    alignItems="center"
-                    fontWeight={1000}
-                    
-                    fontSize="30px"
-                    border={
-                      color === "white" ? "5px solid White" : "5px solid black"
-                    }
-                    backgroundColor={"transparent"}
-                    color={color === "white" ? "white" : "Black"}
-                    p="20px 20px"
-                  >
-                    Karthik
+                <Link
+                  to={"home"}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  key={"home"}
+                >
+                  <Button ml="10px" w="100px" h="40px" background={"none"} _hover={{ background: "none" }}>
+                    {color === "white" ? (
+                      <Image
+                        cursor={"pointer"}
+                        w={{sm:"100%",md:"160%"}}
+                        src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/karthik-low-resolution-logo-color-on-transparent-background.png?raw=true"
+                        alt="logo"
+                      />
+                    ) : (
+                      <Image
+                        cursor={"pointer"}
+                        w={{sm:"100%",md:"160%"}}
+                        src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/karthik-low-resolution-logo-black-on-transparent-background.png?raw=true"
+                        alt="logo"
+                      />
+                    )}
                   </Button>
-                  </Link>
+                </Link>
               </Heading>
             </motion.div>
           </HStack>
@@ -95,13 +109,29 @@ function Navbar() {
               fontWeight="500"
               fontSize="16px"
             >
-              <Link style={{cursor:"pointer"}} to={"home"} spy={true} smooth={true} offset={-70} duration={1000} key={"home"}>
-                  <Text  fontSize="20px" as="b" color={color}>
-                    Home
-                  </Text>
-                  </Link>
+              <Link
+                style={{ cursor: "pointer" }}
+                to={"home"}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+                key={"home"}
+              >
+                <Text fontSize="20px" as="b" color={color}>
+                  Home
+                </Text>
+              </Link>
               {Links.map((link) => (
-                <Link style={{cursor:"pointer"}} to={link.id} spy={true} smooth={true} offset={0} duration={500} key={link.name}>
+                <Link
+                  style={{ cursor: "pointer" }}
+                  to={link.id}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  key={link.name}
+                >
                   <Text fontSize="20px" as="b" color={color}>
                     {link.name}
                   </Text>
@@ -111,22 +141,29 @@ function Navbar() {
                 href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
                 download={"Karthik-Alakunta-Resume"}
               >
-                <Text onClick={isOpen ? onClose : onOpen} fontSize="20px" as="b" color={color}>Resume</Text>
+                <Text
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="20px"
+                  as="b"
+                  color={color}
+                >
+                  Resume
+                </Text>
               </a>
             </HStack>
             <motion.div
               initial={{
                 x: 500,
                 opacity: 0,
-                scale: 0.5
+                scale: 0.5,
               }}
               animate={{
                 x: 0,
                 opacity: 1,
-                scale: 1
+                scale: 1,
               }}
               transition={{
-                duration: 1.2
+                duration: 1.2,
               }}
             >
               <Button
@@ -155,23 +192,48 @@ function Navbar() {
             fontSize="16px"
           >
             <VStack spacing={14} mt="20">
-            <Link style={{cursor:"pointer"}} to={"home"} spy={true} smooth={true} offset={-1100} duration={500} key={"home"} onClick={isOpen ? onClose : onOpen}>
-                  <Text  fontSize="20px" as="b" color={color}>
-                    Home
-                  </Text>
-                  </Link>
-            {Links.map((link) => (
-                  <Link style={{cursor:"pointer"}} to={link.id} spy={true} smooth={true} offset={-1020} duration={500} key={link.name} onClick={isOpen ? onClose : onOpen}>
-                  <Text  fontSize="20px" as="b" color={color}>
+              <Link
+                style={{ cursor: "pointer" }}
+                to={"home"}
+                spy={true}
+                smooth={true}
+                offset={-1100}
+                duration={500}
+                key={"home"}
+                onClick={isOpen ? onClose : onOpen}
+              >
+                <Text fontSize="20px" as="b" color={color}>
+                  Home
+                </Text>
+              </Link>
+              {Links.map((link) => (
+                <Link
+                  style={{ cursor: "pointer" }}
+                  to={link.id}
+                  spy={true}
+                  smooth={true}
+                  offset={-1020}
+                  duration={500}
+                  key={link.name}
+                  onClick={isOpen ? onClose : onOpen}
+                >
+                  <Text fontSize="20px" as="b" color={color}>
                     {link.name}
                   </Text>
-                  </Link>
+                </Link>
               ))}
-               <a
+              <a
                 href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
                 download={"Karthik-Alakunta-Resume"}
               >
-                <Text onClick={isOpen ? onClose : onOpen} fontSize="20px" as="b" color={color}>Resume</Text>
+                <Text
+                  onClick={isOpen ? onClose : onOpen}
+                  fontSize="20px"
+                  as="b"
+                  color={color}
+                >
+                  Resume
+                </Text>
               </a>
             </VStack>
           </VStack>
@@ -182,5 +244,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
