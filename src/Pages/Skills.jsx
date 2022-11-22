@@ -33,7 +33,8 @@ export default function Skills() {
                 templateColumns={{
                   base: "50% 50%",
                   sm: "50% 50%",
-                  md: "repeat(4,1fr)",
+                  md: "20% 20% 20% 20%",
+                  lg: "25% 25% 25% 25%",
                 }}
                 alignItems={"center"}
                 gap={{ base: 5, sm: 5, md: 1 }}
@@ -113,7 +114,7 @@ export default function Skills() {
             </Box>
             <Box mt="30px">
               <Text as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
-                Tools
+                Tools :
               </Text>
               <Grid
                 w="100%"
@@ -157,13 +158,13 @@ export default function Skills() {
             </Box>
           </GridItem>
           <GridItem>
-            <Box mt="25px">
+            <Box mt="30px">
               <Text as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
                 Back-End Technology & Framework :
               </Text>
               <Grid
                 w="100%"
-                mt="25px"
+                mt="20px"
                 templateColumns={{
                   base: "50% 50%",
                   sm: "50% 50%",
@@ -192,7 +193,7 @@ export default function Skills() {
                 </GridItem>
               </Grid>
             </Box>
-            <Box m="auto" mt="50px">
+            <Box m="auto" mt="33px">
               <Text as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
                 Database :
               </Text>
@@ -207,9 +208,9 @@ export default function Skills() {
                 />
               </Box>
             </Box>
-            <Box mt="50px">
+            <Box mt="30px">
               <Text alignItems={"center"} as="b" fontSize={{ base: "20px", sm: "20px", md: "30px" }}>
-                Other Skills
+                Other Skills :
               </Text>
               <Box mt="25px">
                 <Image

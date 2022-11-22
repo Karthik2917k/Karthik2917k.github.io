@@ -16,7 +16,7 @@ import { MdVideoLibrary } from "react-icons/md";
 import Github from "./Github";
 const fadeImages = [
   {
-    url: "https://www.ayoa.com/wp-content/uploads/sites/5/2020/11/New_to_ayoa_banner.png",
+    url: "https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/ayoa.png?raw=true",
     caption: "Ayoa",
     description:
       "It's group project - Ayoa.com is an online Project, Provides a Better Way for Brainstorming, note-taking, and Project Planning. finished project in 7 days and learned lots of new things being a part of team as a member",
@@ -27,7 +27,7 @@ const fadeImages = [
       "https://drive.google.com/file/d/1BOf1FNiTXYQK9GWj0FACFaPgGAz8pu43/view?usp=share_link",
   },
   {
-    url: "https://i.ibb.co/SX2jVN3/indeed.png",
+    url: "https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/indeed.png?raw=true",
     caption: "Indeed",
     description:
       "It's my major project - Indeed.com is an recruitment platform that provides hiring-related services to job seekers / corporates and recruiters . finished project in 6-7 days and learned lots of new things.",
@@ -38,7 +38,7 @@ const fadeImages = [
       "https://drive.google.com/file/d/1Is-rMfs2BSEZIN25njMelI4QIXTXIYI6/view?usp=share_link",
   },
   {
-    url: "https://i.ibb.co/1LKMgW2/asos.png",
+    url: "https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/asos.png?raw=true",
     caption: "Asos",
     description:
       "It's an individual project - Asos.com is an online shopping site for men clothing. try to implement all the features of an e-commerce website. finished project in 5 days.",
@@ -49,7 +49,7 @@ const fadeImages = [
       "https://drive.google.com/file/d/18ecWNcBSxMqNaDi7LCTYkVLiTjYGC2Va/view?usp=share_link",
   },
   {
-    url: "https://www.sociableblog.com/wp-content/uploads/2014/12/bufferapp1.jpg",
+    url: "https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/buffer.jpg?raw=true",
     caption: "Buffer.com",
     description:"It's group project -Buffer is a social media management application or tool. It helps you to manage multiple social media networks from one place. It is one of the best time saving methods in the world of social media marketing.",
     languages: "React, Chakra-ui, redux, express, Node js, MongoDB",
@@ -57,7 +57,7 @@ const fadeImages = [
     live: "https://bluelock.vercel.app/",
   },
   {
-    url: "https://i.ibb.co/9gM37kd/Screenshot-444.png",
+    url: "https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/taskify.png?raw=true",
     caption: "Todo",
     description:
       "It's an individual project - Todo is an online aplication where user can able to update edit add todos in the site. Project esecuted in 01 day",
