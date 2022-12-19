@@ -14,7 +14,7 @@ import "react-slideshow-image/dist/styles.css";
 import { FaLaptopCode, FaGithub } from "react-icons/fa";
 import { MdVideoLibrary } from "react-icons/md";
 import Github from "./Github";
-const fadeImages = [
+const projects = [
   {
     url: "https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/ayoa.png?raw=true",
     caption: "Ayoa",
@@ -57,13 +57,12 @@ const fadeImages = [
     live: "https://bluelock.vercel.app/",
   },
   {
-    url: "https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/taskify.png?raw=true",
-    caption: "Todo",
+    url: "https://customercarecontacts.com/wp-content/uploads/2022/04/zee5-website-1024x484.jpg",
+    caption: "Zee5-Clone",
     description:
-      "It's an individual project - Todo is an online aplication where user can able to update edit add todos in the site. Project esecuted in 01 day",
-    languages: "React, TypeScript, CSS3, HTML",
-    github: "https://github.com/Karthik2917k/todo-react-typescript",
-    live: "https://todo-react-typescript-aujx.vercel.app",
+      "This is A Clone Of Zee5 Which is A OTT Application To watch movies and web-series online this is Full-Stack Project With Backend Code Including Admin Side Also",
+    github: "https://github.com/Karthik2917k/Zee5-Clone",
+    live: "https://temporary-bag-6678.vercel.app/",
   }
 ];
 function Projects() {
@@ -88,7 +87,7 @@ function Projects() {
           }}
         >
           <Fade>
-            {fadeImages.map((fadeImage, index) => (
+            {projects.map((fadeImage, index) => (
               <div className="each-fade" key={index}>
                 <div
                   style={{ textAlign: "center" }}

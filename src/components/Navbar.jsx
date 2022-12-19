@@ -80,18 +80,24 @@ function Navbar() {
                   duration={1000}
                   key={"home"}
                 >
-                  <Button ml="10px" w="100px" h="40px" background={"none"} _hover={{ background: "none" }}>
+                  <Button
+                    ml="10px"
+                    w="100px"
+                    h="40px"
+                    background={"none"}
+                    _hover={{ background: "none" }}
+                  >
                     {color === "white" ? (
                       <Image
                         cursor={"pointer"}
-                        w={{sm:"100%",md:"160%"}}
+                        w={{ sm: "100%", md: "160%" }}
                         src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/karthik-low-resolution-logo-color-on-transparent-background.png?raw=true"
                         alt="logo"
                       />
                     ) : (
                       <Image
                         cursor={"pointer"}
-                        w={{sm:"100%",md:"160%"}}
+                        w={{ sm: "100%", md: "160%" }}
                         src="https://github.com/Karthik2917k/Karthik2917k.github.io/blob/master/public/assets/karthik-low-resolution-logo-black-on-transparent-background.png?raw=true"
                         alt="logo"
                       />
@@ -137,19 +143,28 @@ function Navbar() {
                   </Text>
                 </Link>
               ))}
-              <a
-                href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
-                download={"Karthik-Alakunta-Resume"}
+              <Box
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1T91PahLaInuTS6za3OwvctY__6ZZ1W9h/view?usp=sharing",
+                    "_blank"
+                  );
+                }}
               >
-                <Text
-                  onClick={isOpen ? onClose : onOpen}
-                  fontSize="20px"
-                  as="b"
-                  color={color}
+                <a
+                  href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
+                  download={"Karthik-Alakunta-Resume"}
                 >
-                  Resume
-                </Text>
-              </a>
+                  <Text
+                    fontSize="20px"
+                    as="b"
+                    color={color}
+                  >
+                    Resume
+                  </Text>
+                </a>
+              </Box>
+               
             </HStack>
             <motion.div
               initial={{
@@ -222,19 +237,27 @@ function Navbar() {
                   </Text>
                 </Link>
               ))}
-              <a
-                href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
-                download={"Karthik-Alakunta-Resume"}
+                <Box
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1T91PahLaInuTS6za3OwvctY__6ZZ1W9h/view?usp=sharing",
+                    "_blank"
+                  );
+                }}
               >
-                <Text
-                  onClick={isOpen ? onClose : onOpen}
-                  fontSize="20px"
-                  as="b"
-                  color={color}
+                <a
+                  href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
+                  download={"Karthik-Alakunta-Resume"}
                 >
-                  Resume
-                </Text>
-              </a>
+                  <Text
+                    fontSize="20px"
+                    as="b"
+                    color={color}
+                  >
+                    Resume
+                  </Text>
+                </a>
+              </Box>
             </VStack>
           </VStack>
         ) : null}

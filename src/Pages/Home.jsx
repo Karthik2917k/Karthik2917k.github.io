@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 function Home() {
   const color = useColorModeValue("blue.300", "white");
   return (
-    <Box id="home" pt={{sm:"0px",md:"130px"}}>
+    <Box id="home" pt={{ sm: "0px", md: "130px" }}>
       <Grid
         w={{ base: "80%", sm: "80%", md: "90%" }}
         m="auto"
@@ -76,7 +76,12 @@ function Home() {
                 />
               </span>
             </Text>
-            <Text pt="20px" color={color==="white"?"white":"gray.700"}  w="90%" m="auto">
+            <Text
+              pt="20px"
+              color={color === "white" ? "white" : "gray.700"}
+              w="90%"
+              m="auto"
+            >
               A Mern Stack Developer who loves solving problems and building
               projects. I am equipped with a variety of technologies and tools
               to help me build the best possible product.
@@ -102,13 +107,22 @@ function Home() {
               >
                 <FaGithub size={"30px"} />
               </Link>
-              <Link
+              <Box
                 ml="20px"
-                href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
-                download={"Karthik-Alakunta-Resume"}
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1T91PahLaInuTS6za3OwvctY__6ZZ1W9h/view?usp=sharing",
+                    "_blank"
+                  );
+                }}
               >
-                <FaArrowCircleDown size={"30px"} />
-              </Link>
+                <Link
+                  href="https://github.com/Karthik2917k/Karthik2917k.github.io/raw/master/public/assets/Karthik-Alakunta-Resume.pdf"
+                  download={"Karthik-Alakunta-Resume"}
+                >
+                  <FaArrowCircleDown size={"30px"} />
+                </Link>
+              </Box>
             </Box>
           </motion.div>
         </GridItem>
