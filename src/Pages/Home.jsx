@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 function Home() {
   const color = useColorModeValue("blue.300", "white");
   return (
-    <Box id="home" pt={{ sm: "0px", md: "130px"}} m="70px">
+    <Box id="home" pt={{ sm: "0px", md: "130px"}} mt="60px">
       <Grid
         w={{ base: "80%", sm: "80%", md: "90%" }}
         m="auto"
