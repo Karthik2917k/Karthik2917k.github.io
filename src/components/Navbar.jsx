@@ -32,7 +32,9 @@ function Navbar() {
       <Box
         backgroundColor={color === "white" ? "gray.700" : "gray.100"}
         px={{ base: "3", md: "8" }}
-        position="sticky"
+        position="fixed"
+        left="0"
+        right="0"
         top="0"
         zIndex={4}
         color="white"
@@ -208,6 +210,7 @@ function Navbar() {
             display={{ md: "none" }}
             fontWeight="500"
             fontSize="16px"
+            zIndex={99}
           >
             <VStack spacing={14} mt="20">
               <Link
@@ -230,7 +233,7 @@ function Navbar() {
                   to={link.id}
                   spy={true}
                   smooth={true}
-                  offset={-1020}
+                  offset={60}
                   duration={500}
                   key={link.name}
                   _hover={{color:color === "white"?"lightgrey":"lightblue"}}
